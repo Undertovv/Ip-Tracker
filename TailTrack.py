@@ -1,7 +1,7 @@
 from termcolor import colored
 import requests
 
-input(str("Target IP Address: "))
+targetIP = input(str("Target IP Address: "))
 
 #Send a request to ipinfo.io to get target ip address
 response = requests.get("https://ipinfo.io/" + targetIP + "/json")
